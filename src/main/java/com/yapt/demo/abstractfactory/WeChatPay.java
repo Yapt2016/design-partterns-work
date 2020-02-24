@@ -10,8 +10,4 @@ public class WeChatPay extends InsidePay{
     public void pay() {
         System.out.println("欢迎使用微信支付");
     }
-
-    public void refund() {
-        System.out.println("欢迎使用微信退款");
-    }
 }

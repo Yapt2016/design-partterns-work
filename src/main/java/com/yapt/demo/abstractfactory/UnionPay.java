@@ -10,8 +10,4 @@ public class UnionPay extends InsidePay{
     public void pay() {
         System.out.println("欢迎使用银联支付");
     }
-
-    public void refund() {
-        System.out.println("欢迎使用银联退款");
-    }
 }
