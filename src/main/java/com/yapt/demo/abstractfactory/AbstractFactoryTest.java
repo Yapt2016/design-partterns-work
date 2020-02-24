@@ -7,8 +7,7 @@ package com.yapt.demo.abstractfactory;
 public class AbstractFactoryTest {
 
     public static void main(String[] args) {
-        PayFactory payFactory = new InsidePayFactory();
+        PayFactory payFactory = new AliPayFactory();
         payFactory.createPay().pay();
-        payFactory.createRefund().refund();
     }
 }
