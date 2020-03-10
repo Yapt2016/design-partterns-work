@@ -1,6 +1,7 @@
 package com.yapt.demo.adapter.passport.adapterv2;
 
 import com.yapt.demo.adapter.passport.ResultMsg;
+import com.yapt.demo.adapter.passport.adapterv2.adapters.ILoginAdapter;
 
 /**
  * @author hurui
@@ -8,12 +9,6 @@ import com.yapt.demo.adapter.passport.ResultMsg;
  */
 public interface IPassportForThird {
 
-    ResultMsg loginForQQ(String openId);
-
-    ResultMsg loginForWechat(String openId);
-
-    ResultMsg loginForToken(String token);
-
-    ResultMsg loginForTelphone(String phone, String code);
+    ResultMsg login(String openId,Class<? extends ILoginAdapter> clazz);
 
 }
